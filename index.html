@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="products-container">
+        <h1>Select Products</h1>
+        <div id="categories">
+            <button class="is-blurple" data-category="0">Dairy & Eggs</button>
+            <button class="is-blurple" data-category="1">Bakery</button>
+            <button class="is-blurple" data-category="2">Meat & Fish</button>
+            <button class="is-blurple" data-category="3">  Drinks  </button>
+        </div>
+        
+        
+        <div id="products"></div>
+    </div>
+
+    <div class="current-package">
+        <h2>Package</h2>
+        <div id="package"></div>
+        <div>Total Price: $<span id="totalPrice">0</span></div>
+        <button id="done" class="is-blurple">Done</button>
+    </div>
+    
+    <div class="cart">
+        <h2>Cart</h2>
+        <div id="cart"></div>
+        <button id="order" class="is-blurple">Order</button>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+</body>
+</html>

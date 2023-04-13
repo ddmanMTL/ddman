@@ -1,0 +1,14 @@
+{
+    "name": "website",
+    "version": "1.0.0",
+    "description": "A website for selecting products and creating packages",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "canvas": "^2.11.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.1"
+    }
+}
