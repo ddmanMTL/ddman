@@ -23,7 +23,6 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-   
 }
 
 button.is-blurple {
@@ -44,17 +43,16 @@ button.is-blurple:hover {
     background-color: #586dc9;
 }
 
-
 .package-item {
     display: inline-block;
     width: 100%;
-    height: 50px; /* Set a fixed height */
+    height: 50px;
     border: 1px solid #ccc;
     padding: 5px;
     margin-bottom: 5px;
-    overflow: hidden; /* Add this line to hide overflowing content */
-    text-overflow: ellipsis; /* Add this line to truncate overflowing text */
-    white-space: nowrap; /* Add this line to prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .package-item.small {
@@ -73,19 +71,14 @@ button.is-blurple:hover {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
-  }
-  
-  .product img {
+}
+.product img {
     max-width: 100px;
     max-height: 100px;
     object-fit: contain;
     margin-left: 10px;
-  }
-  
-  /* .product-info {
-    width: calc(100% - 120px);
-  }
-   */
+}
+
 .package-row {
     display: flex;
     flex-wrap: wrap;
@@ -114,3 +107,14 @@ button.is-blurple:hover {
     cursor: pointer;
     outline: none;
 }
+
+@media screen and (max-width: 767px) {
+    .products-container,
+    .current-package,
+    .cart {
+      width: calc(100% - 40px);
+      margin-bottom: 40px;
+    }
+}
+
+/* Path: index.js */
